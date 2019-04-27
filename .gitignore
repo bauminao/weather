@@ -1,0 +1,11 @@
+venv3
+
+django/djangoDB
+
+pass.secret
+settings_secret.py
+
+*.pyc
+
+ignore
+ignore/*
