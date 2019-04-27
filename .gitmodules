@@ -1,0 +1,3 @@
+[submodule "sensors/micropython/webrepl"]
+	path = sensors/micropython/webrepl
+	url = https://github.com/micropython/webrepl.git
