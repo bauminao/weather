@@ -16,6 +16,7 @@ mkdir djangoDB
 
 cd weather
 cp ../../secrets/settings_secret.py . 
+chmod 600 settings_secret.py
 
 # Remove secret-key from settings.py
 sed -i 's/.*SECRET_KEY.*/from .settings_secret import */' settings.py
