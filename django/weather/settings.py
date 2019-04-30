@@ -25,7 +25,7 @@ from .settings_secret import *
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['loacalhost','127.0.0.1']
+ALLOWED_HOSTS = ['localhost','127.0.0.1']
 ALLOWED_HOSTS += ['192.168.29.{}'.format(i) for i in range(256)]
 ALLOWED_HOSTS += ['192.168.55.{}'.format(i) for i in range(256)]
 
@@ -33,6 +33,7 @@ ALLOWED_HOSTS += ['192.168.55.{}'.format(i) for i in range(256)]
 # Application definition
 
 INSTALLED_APPS = [
+    'sensors.apps.SensorsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
